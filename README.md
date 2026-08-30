@@ -5,4 +5,4 @@
 - Different operations on Arrays
 - Math Functions
 - Constructor
-- Deconsttructor
+- Deconstructor

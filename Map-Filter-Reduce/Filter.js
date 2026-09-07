@@ -1,6 +1,6 @@
 
 
-const arr = [1,2,3,4,5,6,7,8,9,10];
+// const arr = [1,2,3,4,5,6,7,8,9,10];
 
 // const answer = arr.filter((i) => {
 //     return i>4;
@@ -48,7 +48,7 @@ const book =[
     },
     {
         title:"book5", 
-        genre:"history",
+        genre:"fiction",
         published:2005
     },
     {
@@ -57,3 +57,25 @@ const book =[
         published:2006
     }
 ]
+
+// apply filter on this db only those books should be printed whose genre is fiction only
+
+// const response = book.filter((i)=>{
+//     if(i.genre === "fiction")
+//     {
+//         return i.title;
+//     }
+// })
+// console.log(response);
+
+
+//apply filter on this db only those books which were published after 2004
+
+// const response = book.filter((i)=>{
+//     if(i.published>2004){
+//         return i.title;
+//     }
+// })
+// console.log(response);
+
+/********************************************************************************************** */

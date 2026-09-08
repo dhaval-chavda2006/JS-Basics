@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event-EventBubbling</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">'I am Box'</div>
+    </div>
+
+    <button id="btn">Click me to change content</button>
+    
+</body>
+
+<script>
+    
+
+    //  this is one for one click
+    
+            // "click"
+
+    let button = document.getElementById("btn");
+
+    // button.addEventListener("click", function(){
+    //     document.querySelector('.box').innerHTML = "hey i was clicked and i will ckilling you"
+    // })
+
+
+    // this is for double click  
+
+            // "dblclick" 
+
+    // button.addEventListener("dblclick", function(){
+    //     document.querySelector('.box').innerHTML = "hey i was clicked and i will ckilling you"
+    // })
+
+
+    // now for contextmenu -> right click 
+
+            // "contextmenu"
+
+    // button.addEventListener("contextmenu", function(){
+    //     alert("you right clicked it is not allowed!!!");
+    // });
+
+
+    // now for keydown -> whenever any key is pressed console will be o/p
+
+    // document.addEventListener("keydown", (e)=>{
+    //     console.log(e);
+    // })
+    
+</script>
+</html>

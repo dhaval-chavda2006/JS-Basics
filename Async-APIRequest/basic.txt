@@ -1,0 +1,39 @@
+
+### Async Javascript notes
+
+- Javascript is Synchronous and Single-threaded programming language
+
+- by Synchronous it executes the code line by line, one after another. It waits for the current operation to complete before moving on to the next one.
+by Single-threaded it means that it has only one call stack and can do one thing at a time.
+
+- You may question if Javascript is single threaded then it might be slow, yes you are correct but js never runs with it s own single engine it always run with runtime environment of maybe browser, node.
+
+Above is Default Javascript
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+### execution context of Javascript
+
+- executes one line of code at a time, it has a call stack which keeps track of the function calls and their execution order. When a function is called, it is added to the call stack, and when it returns, it is removed from the stack.
+
+- memory heap is where the variables and objects are stored in memory. When a variable is declared, it is stored in the memory heap, and when it is no longer needed, it is removed from memory.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+### Blocking and Non-Blocking Code
+
+Blocking code is code that stops the execution of other code until it is finished. For example, if you have a long-running function that takes a few seconds to complete, it will block the execution of other code until it is done.
+
+Non-blocking code, on the other hand, allows other code to run while it is executing. This is achieved through asynchronous programming techniques such as callbacks, promises, and async/await.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+::::::::::Inside JavaScript Engine::::::::
+Whenever programs gets execution a call stack is made, inside it there is formation of global execution context and then one-by-one each function is executed
+
+
+:::::::::::Web Api::::::::::::::::
+
+there is fetch() method which is used to make network requests and it is a non-blocking code, it runs in the background and does not block the execution of other code. When the request is complete, it returns a promise that can be used to handle the response.
+
+inside fetch whatever promise queue is there same inside there will be callback queue, which is a queue of functions that are waiting to be executed. When the promise is resolved, the callback function is added to the callback queue, and when the call stack is empty, the event loop picks up the next function from the callback queue and adds it to the call stack for execution.

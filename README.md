@@ -6,3 +6,12 @@
 - Math Functions
 - Constructor
 - Deconstructor
+- General Funcitons
+- Arrow Functions
+- Filter
+- Map
+- Reduce
+- For-ForEach loops
+- EventBubbling
+- Promises
+- Fetch
